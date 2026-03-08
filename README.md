@@ -37,47 +37,6 @@ considerando descuentos, impuestos y tasas de aeropuerto.
 
 ---
 
-## Arquitectura
-
-El proyecto aplica el patrón **MVC** y cuatro patrones de diseño:
-
-| Patrón | Clases |
-|---|---|
-| Singleton | `ConexionBD`, `GestorTema` |
-| DAO | `AeropuertoDAO`, `RutaDAO` |
-| Template Method | `Ruta` → `VueloDomestico` / `VueloInternacional` |
-| Strategy | `IAlgoritmoGrafo` ← `AlgoritmoBellmanFord` |
-
-### Estructura de Paquetes
-```
-src/
-├── app.aeroruta/
-│   └── Main.java
-├── com.aeroruta.algo/
-│   ├── IAlgoritmoGrafo.java
-│   └── AlgoritmoBellmanFord.java
-├── com.aeroruta.dao/
-│   ├── ConexionBD.java
-│   ├── AeropuertoDAO.java
-│   └── RutaDAO.java
-├── com.aeroruta.model/
-│   ├── Aeropuerto.java
-│   ├── Ruta.java
-│   ├── VueloDomestico.java
-│   ├── VueloInternacional.java
-│   ├── GrafoAereo.java
-│   └── ResultadoRuta.java
-├── com.aeroruta.utils/
-│   └── GestorTema.java
-└── com.aeroruta.view/
-    ├── FrmPrincipal.java
-    ├── PanelMapa.java
-    ├── PanelAeropuertos.java
-    └── PanelRutas.java
-```
-
----
-
 ## Herramientas Utilizadas
 
 - **Lenguaje:** Java.
