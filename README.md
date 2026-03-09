@@ -1,5 +1,5 @@
 # Implementacion-de-Bellman-Ford-para-grafos-con-pesos-negativos
-## ✈ AeroRuta — Sistema Inteligente de Navegación Aérea
+## AeroRuta — Sistema Inteligente de Navegación Aérea
 
 Este proyecto fue desarrollado como parte de la evaluación de la asignatura
 **Técnicas de Programación 3** de la Universidad Nacional Experimental de
